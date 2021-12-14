@@ -5,7 +5,10 @@
     <span class="text-sm text-green-600">{{ project.type }}</span>
     /
     <span class="text-sm">{{ project.data }}</span>
-    <i class="fas fa-search-plus btn text-center"></i>
+    
+    <router-link :to="{name: 'Projects', params: project}">
+      <i class="fas fa-search-plus btn text-center"></i>
+    </router-link>
   </article>
 </template>
 

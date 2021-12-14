@@ -1,8 +1,12 @@
 <template>
-  <header class="flex items-center justify-between px-6 py-5 bg-black sticky top-0 w-full z-10">
+  <header>
     <h1 class="text-white leading-6 text-xl" id="port-title">Elmusa</h1>
-    <i class="fas fa-bars leading-6 text-white text-xl"></i>
-    <nav class="hidden">
+    
+    <div v-if="this.$route.name === 'Index'">
+      <i class="fas fa-bars leading-6 text-white text-xl"></i>
+    </div>
+    
+    <nav v-else-if="1>3" class="hidden">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -11,6 +15,13 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <div v-else> 
+        <router-link to="/index" class="text-white">
+          <i class="fas fa-arrow-left mr-3"></i>Back to Index
+        </router-link>
+    </div>
+
   </header>
 </template>
 
@@ -26,5 +37,9 @@ export default {};
 
 #port-title {
   font-family: Moon;
+}
+
+header{
+  @apply flex items-center justify-between px-6 py-5 bg-black sticky top-0 w-full z-10;
 }
 </style>
