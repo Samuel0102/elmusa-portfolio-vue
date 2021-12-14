@@ -1,7 +1,7 @@
 <template>
   <section id="portfolio" class="w-72 mx-auto text-center">
     <h2 class="text-5xl font-bold mt-16">PORTFÓLIO</h2>
-    <p class="mb-10 text-lg text-gray-700 relative " id="portfolio-desc">Projetos e Trabalhos</p>
+    <p class="mb-20 text-lg text-gray-700 relative " id="portfolio-desc">Projetos e Trabalhos</p>
 
     <div id="projects">
         <ProjectCard v-for="(project, index) in projects" :project="project" :key="index" />
@@ -16,12 +16,12 @@ export default {
     data(){
         return {
             projects: [
-                {name: "Rest Countries", type: "Front-End", data: "21/01/2004"},
-                {name: "SUV", type: "FullStack", data: "21/01/2004"},
-                {name: "To Do List", type: "FullStack", data: "21/01/2004"},
-                {name: "Room Homepage", type: "Front-End", data: "21/01/2004"},
-                {name: "Easy Bank", type: "Front-End", data: "21/01/2004"},
-                {name: "Sunnyside", type: "Front-End", data: "21/01/2004"},
+                {name: "Rest Countries", type: "Front-End", data: "21 Jan. 2021", thumb: require("@/assets/rest.png")},
+                {name: "SUV", type: "FullStack", data: "21 Jan. 2021", thumb: require("@/assets/suv.png")},
+                {name: "To Do List", type: "FullStack", data: "21 Jan. 2021", thumb: require("@/assets/todo.png")},
+                {name: "Room Homepage", type: "Front-End", data: "21 Jan. 2021", thumb: require("@/assets/room.png")},
+                {name: "Easy Bank", type: "Front-End", data: "21 Jan. 2021", thumb: require("@/assets/easy.png")},
+                {name: "Sunnyside", type: "Front-End", data: "21 Jan. 2021", thumb: require("@/assets/sunny.png")},
 
             ]
         }
