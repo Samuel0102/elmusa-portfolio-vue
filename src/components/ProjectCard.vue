@@ -1,0 +1,29 @@
+<template>
+  <article class="text-left relative overflow-hidden my-20">
+    <img :src="project.thumb" class="img" />
+    <h3 class="text-lg font-bold mt-5">{{ project.name }}</h3>
+    <span class="text-sm text-green-600">{{ project.type }}</span>
+    /
+    <span class="text-sm">{{ project.data }}</span>
+    <i class="fas fa-search-plus btn text-center"></i>
+  </article>
+</template>
+
+<script>
+export default {
+  props: ["project"],
+};
+</script>
+
+<style scoped>
+  .btn{
+    @apply text-2xl absolute right-1 bottom-1 text-green-600;
+    width: 33px;
+  }
+
+  .img{
+    @apply object-cover h-52 w-full transform hover:scale-110 transition duration-700;
+  }
+
+
+</style>

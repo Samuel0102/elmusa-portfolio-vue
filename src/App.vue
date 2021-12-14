@@ -4,7 +4,8 @@
     <main>
       <TheHome />
       <TheAbout />
-      <TheServices/>
+      <TheServices />
+      <ThePortfolio />
     </main>
   </div>
 </template>
@@ -13,6 +14,7 @@
 import TheAbout from './components/TheAbout.vue'
 import TheHeader from "./components/TheHeader.vue"
 import TheHome from "./components/TheHome.vue"
+import ThePortfolio from './components/ThePortfolio.vue'
 import TheServices from './components/TheServices.vue'
 
 export default {
@@ -21,7 +23,8 @@ export default {
     TheHeader,
     TheHome,
     TheAbout,
-    TheServices
+    TheServices,
+    ThePortfolio
   }
 }
 </script>
