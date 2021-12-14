@@ -10,7 +10,7 @@
       <TheContact />
       </div>
       <footer class="bg-green-600 text-white text-center py-5">
-        Design inspirado em: https://bootstrapmade.com/demo/DevFolio/
+        Designed by BootstrapMade
       </footer>
     </main>
   </div>
