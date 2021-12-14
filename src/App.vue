@@ -4,6 +4,7 @@
     <main>
       <TheHome />
       <TheAbout />
+      <TheServices/>
     </main>
   </div>
 </template>
@@ -12,13 +13,15 @@
 import TheAbout from './components/TheAbout.vue'
 import TheHeader from "./components/TheHeader.vue"
 import TheHome from "./components/TheHome.vue"
+import TheServices from './components/TheServices.vue'
 
 export default {
   name: 'App',
   components: {
     TheHeader,
     TheHome,
-    TheAbout
+    TheAbout,
+    TheServices
   }
 }
 </script>
