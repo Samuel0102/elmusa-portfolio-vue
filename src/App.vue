@@ -6,9 +6,12 @@
       <TheAbout />
       <TheServices />
       <ThePortfolio />
-      <div class="bg-green-500 pt-16 pb-5">
+      <div class="bg-green-600 pt-16 pb-5 shadow-2xl">
       <TheContact />
       </div>
+      <footer class="bg-green-600 text-white text-center py-5">
+        Designed by BootstrapMade
+      </footer>
     </main>
   </div>
 </template>
