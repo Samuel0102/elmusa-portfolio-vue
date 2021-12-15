@@ -1,23 +1,37 @@
 <template>
-  <section id="home" class="w-full text-center text-white flex flex-col justify-center">
-      <h2 class="font-bold text-6xl" id="home-title">Samuel Pacheco</h2>
-      <VueWriter class="text-xl text-bold" :array="['Desenvolvedor Fullstack','Freelancer']" />
+  <section id="home">
+    <h2 class="lg:pr-36 font-bold text-6xl lg:text-7xl" id="home-title">
+      Samuel Pacheco
+    </h2>
+    <VueWriter
+      class="lg:pr-36 text-xl lg:text-2xl text-bold"
+      :array="['Desenvolvedor Fullstack', 'Freelancer']"
+    />
   </section>
 </template>
 
 <script>
-import VueWriter from 'vue-writer'
+import VueWriter from "vue-writer";
 
 export default {
-    components: {VueWriter}
-}
+  components: { VueWriter },
+};
 </script>
 
 <style scoped>
-    #home{
-        background: url('../assets/back.png') no-repeat bottom, black;
-        background-size: 450px;
-        height: 90vh;
-    }
+#home {
+  @apply w-full text-center lg:text-right text-white flex flex-col justify-center;
+  background: url("../assets/back.png") no-repeat, black;
+  background-position: center 70%;
+  background-size: max-width(200px);
+  background-attachment: fixed;
+  height: 85vh;
+}
 
+@media (min-width: 1024px) {
+  #home {
+    background-position: 5% 70%;
+    background-size: 60%;
+  }
+}
 </style>
