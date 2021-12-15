@@ -2,22 +2,18 @@
   <header>
     <h1 class="text-white leading-6 text-xl" id="port-title">Elmusa</h1>
     
-    <div v-if="this.$route.name === 'Index'">
-      <i class="fas fa-bars leading-6 text-white text-xl"></i>
-    </div>
-    
-    <nav v-else-if="1>3" class="hidden">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+    <nav v-if="isOnIndex">
+      <ul class="text-white hidden sm:block">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
 
     <div v-else> 
-        <router-link to="/index" class="text-white">
+        <router-link to="/" class="text-white">
           <i class="fas fa-arrow-left mr-3"></i>Back to Index
         </router-link>
     </div>
@@ -26,7 +22,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    isOnIndex(){
+      return this.$route.name === "Index"
+    }
+  }
+
+}
+
 </script>
 
 <style scoped>
@@ -40,6 +44,11 @@ export default {};
 }
 
 header{
-  @apply flex items-center justify-between px-6 py-5 bg-black sticky top-0 w-full z-10;
+  @apply flex items-baseline justify-between px-6 md:px-10 lg:px-20 py-5 bg-black sticky top-0 w-full z-10;
 }
+
+ul li{
+  @apply inline px-2 font-medium uppercase;
+}
+
 </style>

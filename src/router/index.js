@@ -4,7 +4,7 @@ import Project from '../views/ProjectPage.vue'
 
 const routes = [
   {
-    path: '/index',
+    path: '/',
     name: 'Index',
     component: Index
   },

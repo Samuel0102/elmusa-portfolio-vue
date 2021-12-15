@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MobileMenu />
     <TheHeader />
     <router-view></router-view>
     <footer
@@ -12,11 +13,13 @@
 </template>
 
 <script>
+import MobileMenu from './components/MobileMenu.vue';
 import TheHeader from "./components/TheHeader.vue";
 export default {
   name: "App",
   components: {
     TheHeader,
+    MobileMenu,
   },
 };
 </script>
