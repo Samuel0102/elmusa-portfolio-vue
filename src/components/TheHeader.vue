@@ -17,7 +17,7 @@
     </nav>
 
     <div v-else> 
-        <router-link to="/index" class="text-white">
+        <router-link to="/" class="text-white">
           <i class="fas fa-arrow-left mr-3"></i>Back to Index
         </router-link>
     </div>

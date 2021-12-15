@@ -9,16 +9,16 @@
         <h1 class="text-3xl text-center font-bold my-10">{{ info.name }}</h1>
 
         <div id="basic">
-          <ul>
+          <ul class="break-words">
             <li><strong>Tecnologias: </strong>{{ info.skills }}</li>
             <li><strong>Categoria: </strong>{{ info.type }}</li>
             <li>
               <strong>Repositório: </strong>
-              <a :href="info.gitRepo">{{ info.gitRepo }}</a>
+              <a :href="info.gitRepo" target="_blank">{{ info.gitRepo }}</a>
             </li>
             <li>
               <strong>Publicação: </strong>
-              <a :href="info.url">{{ info.url }}</a>
+              <a :href="info.url" target="_blank">{{ info.url }}</a>
             </li>
           </ul>
         </div>
@@ -43,7 +43,7 @@ export default {
   },
 
   created() {
-    if (!localStorage[0] || this.$route.name !== undefined){
+    if (Object.entries(this.$route.params).length  > 0){
         localStorage.setItem(0, JSON.stringify(this.$route.params));
     }
 
