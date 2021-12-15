@@ -149,7 +149,7 @@ export default {
 
 <style scoped>
   #projects{
-    @apply flex flex-col flex-wrap md:flex-row md:justify-center gap-x-20 gap-y-16 mt-20;
+    @apply flex flex-col flex-wrap md:flex-row md:justify-center gap-x-20 gap-y-16 my-20;
   }
 
 </style>

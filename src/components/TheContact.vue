@@ -1,7 +1,7 @@
 <template>
-  <section id="contact" class="w-72 mx-auto bg-white py-4 px-6 shadow-xl">
-    <h2 class="text-3xl mb-8 relative title">Contato</h2>
-    <p class="mb-4 text-lg text-gray-700 text-justify">
+  <section id="contact" class="px-5 md:w-8/12 lg:w-9/12 mx-auto bg-white py-4 shadow-xl">
+    <SubTitle :subtitle="'Contatos'" />
+    <p class="my-4 text-lg text-gray-700 text-justify">
       Para contato, disponível em todas as redes sociais e caso queira negociar
       algum <em>freela</em>, propostas ou qualquer assunto basta me chamar!
     </p>
@@ -23,17 +23,14 @@
 </template>
 
 <script>
-export default {};
+import SubTitle from './SubTitle.vue';
+export default {
+  components: { SubTitle },
+  };
 </script>
 
 <style scoped>
-.title::before {
-  content: "";
-  width: 96px;
-  border: 1px solid black;
-  position: absolute;
-  bottom: -2px;
-}
+
     .social-icon{
         @apply p-1 text-2xl border-2 border-green-700 rounded-full text-center hover:text-white hover:bg-green-600 hover:border-green-400 transition-all;
         width: 45px;
