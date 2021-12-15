@@ -1,9 +1,9 @@
 <template>
-  <section id="portfolio" class="w-72 mx-auto text-center">
-    <h2 class="text-5xl font-bold mt-16">PORTFÓLIO</h2>
-    <p class="mb-20 text-lg text-gray-700 relative" id="portfolio-desc">
-      Projetos e Trabalhos
-    </p>
+  <section id="portfolio" class="px-5 md:w-12/12 lg:px-10 mx-auto text-center">
+    <SectionTitle
+        :title="'Portfólio'"
+        :resume="'Projetos e Trabalhos'"
+     />
 
     <div id="projects">
       <ProjectCard
@@ -17,8 +17,9 @@
 
 <script>
 import ProjectCard from "./ProjectCard.vue";
+import SectionTitle from './SectionTitle.vue';
 export default {
-  components: { ProjectCard },
+  components: { ProjectCard, SectionTitle },
   data() {
     return {
       projects: [
@@ -147,14 +148,8 @@ export default {
 </script>
 
 <style scoped>
-#portfolio-desc::before {
-  content: " ";
-  width: 37px;
-  border: 3px solid;
-  @apply text-green-600;
-  position: absolute;
-  bottom: -20px;
-  left: 40%;
-  right: 50%;
-}
+  #projects{
+    @apply flex flex-col flex-wrap md:flex-row md:justify-center gap-x-20 gap-y-16 mt-20;
+  }
+
 </style>

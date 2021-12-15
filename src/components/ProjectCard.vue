@@ -1,5 +1,5 @@
 <template>
-  <article class="text-left relative overflow-hidden my-20">
+  <article class="text-left relative overflow-hidden w-12/12 md:w-6/12 lg:w-3/12">
     <img :src="project.thumb" class="img" />
     <h3 class="text-lg font-bold mt-5">{{ project.name }}</h3>
     <span class="text-sm text-green-600">{{ project.type }}</span>
