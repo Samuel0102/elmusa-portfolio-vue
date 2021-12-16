@@ -1,12 +1,14 @@
 <template>
   <h2 id="title" class="text-5xl font-bold mt-12">{{ title }}</h2>
-  <p id="resume" class="mt-2 mb-10 text-lg text-gray-700 relative">{{ resume }}</p>
+  <p id="resume" class="mt-2 mb-10 text-lg text-gray-700 relative">
+    {{ resume }}
+  </p>
 </template>
 
 <script>
 export default {
-    props: ['title', 'resume']
-}
+  props: ["title", "resume"],
+};
 </script>
 
 <style scoped>
@@ -20,7 +22,5 @@ export default {
   left: 0;
   right: 0;
   margin: 0 auto;
-  
 }
-
 </style>

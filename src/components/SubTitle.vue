@@ -4,17 +4,16 @@
 
 <script>
 export default {
-    props: ['subtitle']
-}
+  props: ["subtitle"],
+};
 </script>
 
 <style scoped>
-    #subtitle:before{
-        content: "";
-        width: 67%;
-        border: 1px solid black;
-        position: absolute;
-        bottom: -2px;
-    }
-
+#subtitle:before {
+  content: "";
+  width: 67%;
+  border: 1px solid black;
+  position: absolute;
+  bottom: -2px;
+}
 </style>

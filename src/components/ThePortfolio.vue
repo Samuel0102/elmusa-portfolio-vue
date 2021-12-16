@@ -1,9 +1,6 @@
 <template>
   <section id="portfolio" class="px-5 md:w-12/12 lg:px-10 mx-auto text-center">
-    <SectionTitle
-        :title="'Portfólio'"
-        :resume="'Projetos e Trabalhos'"
-     />
+    <SectionTitle :title="'Portfólio'" :resume="'Projetos e Trabalhos'" />
 
     <div id="projects">
       <ProjectCard
@@ -17,7 +14,7 @@
 
 <script>
 import ProjectCard from "./ProjectCard.vue";
-import SectionTitle from './SectionTitle.vue';
+import SectionTitle from "./SectionTitle.vue";
 export default {
   components: { ProjectCard, SectionTitle },
   data() {
@@ -52,13 +49,7 @@ export default {
             de rotas de views, o projeto visa ser capaz de armazenar dados
             de usuários a serem vacinados, usuários a vacinar, a própria
             vacinação e as vacinas utilizadas, como objeto de referência,
-            no processo. A principal aposta do SUV é se compreender como
-            um projeto que encontre base na necessidade atual da virtualização
-            e digitalização de processos, até então, materialistas e arcaicos.
-            O armazenamento de dados tão importantes, como os de vacinações,
-            ainda sujeitam-se a perdas e obstruções quando guardados
-            em documentos físicos, por exemplo. Tendo seu armazenamento em uma nuvem,
-            a integridade desses dados teria mais chances de continuar intacta.
+            no processo. 
           `,
         },
         {
@@ -148,8 +139,8 @@ export default {
 </script>
 
 <style scoped>
-  #projects{
-    @apply flex flex-col flex-wrap md:flex-row md:justify-center gap-x-20 gap-y-16 my-20;
-  }
-
+#projects {
+  @apply flex flex-col flex-wrap gap-x-20 gap-y-16 my-20
+           md:flex-row md:justify-center;
+}
 </style>

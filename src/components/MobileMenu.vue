@@ -51,9 +51,8 @@ export default {
 }
 
 #hamburguer {
-  @apply leading-6 text-white text-xl
-                cursor-pointer fixed z-30 py-5 right-0
-                pr-6 md:pr-10 lg:pr-20;
+  @apply leading-6 pr-6 text-white text-xl cursor-pointer fixed z-30 py-5 right-0
+          md:pr-10 lg:pr-20;
 }
 
 .slide-fade-enter-active {

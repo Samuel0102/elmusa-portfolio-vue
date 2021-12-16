@@ -1,12 +1,14 @@
 <template>
-  <article class="text-left relative overflow-hidden w-12/12 md:w-6/12 lg:w-3/12">
+  <article
+    class="text-left relative overflow-hidden w-12/12 md:w-5/12 lg:w-4/12 xl:w-3/12"
+  >
     <img :src="project.thumb" class="img" />
     <h3 class="text-lg font-bold mt-5">{{ project.name }}</h3>
     <span class="text-sm text-green-600">{{ project.type }}</span>
     /
     <span class="text-sm">{{ project.data }}</span>
-    
-    <router-link :to="{name: 'Projects', params: project}">
+
+    <router-link :to="{ name: 'Projects', params: project }">
       <i class="fas fa-search-plus btn text-center"></i>
     </router-link>
   </article>
@@ -19,14 +21,12 @@ export default {
 </script>
 
 <style scoped>
-  .btn{
-    @apply text-2xl absolute right-1 bottom-1 text-green-600;
-    width: 33px;
-  }
+.btn {
+  @apply text-2xl absolute right-1 bottom-1 text-green-600;
+  width: 33px;
+}
 
-  .img{
-    @apply object-cover h-52 w-full transform hover:scale-110 transition duration-700;
-  }
-
-
+.img {
+  @apply object-cover h-52 w-full transform hover:scale-110 transition duration-700;
+}
 </style>

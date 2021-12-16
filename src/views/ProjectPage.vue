@@ -6,9 +6,9 @@
 
     <section id="project-about">
       <div id="project-info">
-        <SubTitle class="my-8" :subtitle="info.name"/>
+        <SubTitle class="my-8" :subtitle="info.name" />
 
-        <div id="basic" >
+        <div id="basic">
           <ul class="break-words">
             <li><strong>Tecnologias: </strong>{{ info.skills }}</li>
             <li><strong>Categoria: </strong>{{ info.type }}</li>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import SubTitle from '../components/SubTitle.vue';
+import SubTitle from "../components/SubTitle.vue";
 export default {
   components: { SubTitle },
   data() {
@@ -45,8 +45,8 @@ export default {
   },
 
   created() {
-    if (Object.entries(this.$route.params).length  > 0){
-        localStorage.setItem(0, JSON.stringify(this.$route.params));
+    if (Object.entries(this.$route.params).length > 0) {
+      localStorage.setItem(0, JSON.stringify(this.$route.params));
     }
 
     this.setData();
@@ -61,16 +61,21 @@ export default {
 </script>
 
 <style>
-  #project{
-    @apply w-full lg:flex lg:items-center mx-auto md:w-10/12 lg:mt-16;
-  }
+#project {
+  @apply w-full mx-auto
+            md:w-10/12
+            lg:flex lg:items-center lg:mt-16;
+}
 
-  #project-img{
-    @apply p-5 md:p-0 md:mt-8 w-full lg:pr-20 object-contain;
-  }
+#project-img {
+  @apply p-5 w-full object-contain 
+            md:p-0 md:mt-8
+            lg:pr-20;
+}
 
-  #project-about{
-    @apply md:w-11/12 lg:w-full mx-auto px-5 pb-5 md:mt-5;
-  }
-
+#project-about {
+  @apply mx-auto px-5 pb-5 
+            md:w-11/12 md:mt-5
+            lg:w-full;
+}
 </style>

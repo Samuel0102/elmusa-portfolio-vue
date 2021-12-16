@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import MobileMenu from './components/MobileMenu.vue';
+import MobileMenu from "./components/MobileMenu.vue";
 import TheHeader from "./components/TheHeader.vue";
 export default {
   name: "App",
