@@ -1,14 +1,14 @@
 <template>
   <main id="project">
     <section id="project-img">
-      <img :src="info.thumb" class="p-2 text-center h-52 object-cover" />
+      <img :src="info.thumb" class="w-full" />
     </section>
 
-    <section id="project-about" class="w-72 mx-auto">
+    <section id="project-about">
       <div id="project-info">
-        <h1 class="text-3xl text-center font-bold my-10">{{ info.name }}</h1>
+        <SubTitle class="my-8" :subtitle="info.name"/>
 
-        <div id="basic">
+        <div id="basic" >
           <ul class="break-words">
             <li><strong>Tecnologias: </strong>{{ info.skills }}</li>
             <li><strong>Categoria: </strong>{{ info.type }}</li>
@@ -35,7 +35,9 @@
 </template>
 
 <script>
+import SubTitle from '../components/SubTitle.vue';
 export default {
+  components: { SubTitle },
   data() {
     return {
       info: {},
@@ -58,4 +60,17 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  #project{
+    @apply w-full lg:flex lg:items-center mx-auto md:w-10/12 lg:mt-16;
+  }
+
+  #project-img{
+    @apply p-5 md:p-0 md:mt-8 w-full lg:pr-20 object-contain;
+  }
+
+  #project-about{
+    @apply md:w-11/12 lg:w-full mx-auto px-5 pb-5 md:mt-5;
+  }
+
+</style>
