@@ -4,11 +4,11 @@
 
     <nav v-if="isOnIndex">
       <ul class="hidden sm:block ul space-x-6">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#" v-scroll-to="'#home'">Home</a></li>
+        <li><a href="#about" v-scroll-to="'#about'">Sobre</a></li>
+        <li><a href="#services" v-scroll-to="'#services'">Serviços</a></li>
+        <li><a href="#portfolio" v-scroll-to="'#portfolio'">Portfólio</a></li>
+        <li><a href="#contact" v-scroll-to="'#contact'">Contato</a></li>
       </ul>
     </nav>
 
@@ -26,7 +26,7 @@ export default {
     isOnIndex() {
       return this.$route.name === "Index";
     },
-  },
+  }
 };
 </script>
 

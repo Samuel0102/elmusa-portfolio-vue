@@ -1,8 +1,8 @@
 <template>
   <div class="relative sm:hidden">
     <i
-      v-if="this.$route.name === 'Index'"
-      :class="[{ 'fas fa-times': isOpen }, 'fas fa-bars']"
+      v-if="isOnIndex"
+      :class="whichHamburguerIcon"
       id="hamburguer"
       @click="isOpen = !isOpen"
     ></i>
@@ -11,11 +11,13 @@
       <div id="overlay" v-if="isOpen">
         <nav class="nav">
           <ul class="ul">
-            <li><a href="#home">Home</a></li>
-            <li class="py-4"><a href="#about">Sobre</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li class="py-4"><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#" v-scroll-to="'#home'">Home</a></li>
+            <li class="py-4"><a href="#about" v-scroll-to="'#about'">Sobre</a></li>
+            <li><a href="#services" v-scroll-to="'#services'">Serviços</a></li>
+            <li class="py-4">
+              <a href="#portfolio" v-scroll-to="'#portfolio'">Portfólio</a>
+            </li>
+            <li><a href="#contact" v-scroll-to="'#contact'">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -30,6 +32,14 @@ export default {
       isOpen: false,
     };
   },
+  computed: {
+    isOnIndex() {
+      return this.$route.name === "Index";
+    },
+    whichHamburguerIcon(){
+      return this.isOpen ? 'fas fa-times' : 'fas fa-bars';
+    }
+  }
 };
 </script>
 
