@@ -98,11 +98,6 @@ export default {
           xl:text-lg;
 }
 
-#skills img {
-  @apply transform
-          xl:scale-110 xl:mx-2;
-}
-
 #profile-info {
   @apply md:row-start-1 md:col-start-2 mx-auto
           lg:row-span-1 lg:col-start-1 lg:col-span-1 lg:w-8/12 
