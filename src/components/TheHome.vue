@@ -1,5 +1,5 @@
 <template>
-  <section id="home">
+  <section id="home" class="lg:pr-9">
     <h2
       class="lg:pr-10 xl:pr-36 font-bold text-6xl xl:text-7xl"
       id="home-title"
