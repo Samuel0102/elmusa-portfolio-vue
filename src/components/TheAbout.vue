@@ -4,8 +4,8 @@
       <img src="../assets/profile.jpeg" id="profile-img" />
 
       <ul id="profile-info" class="mt-5 md:mt-0 w-full">
-        <li><strong>Nome: </strong>Samuel Pacheco aka Elmusa</li>
-        <li><strong>Atuação: </strong> FullStack</li>
+        <li><strong>Nome: </strong>Samuel Pacheco</li>
+        <li><strong>Atuação: </strong>Desenvolvedor FullStack</li>
         <li><strong>Email: </strong>fsamuelpacheco@gmail.com</li>
         <li><strong>Telefone: </strong>(47) 99769-4884</li>
       </ul>
