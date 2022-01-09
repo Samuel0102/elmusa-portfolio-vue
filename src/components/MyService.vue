@@ -1,5 +1,5 @@
 <template>
-  <article class="my-10 w-64 md:w-72 shadow-sm p-4 rounded-md transform md:scale-110">
+  <article class="article">
     <i :class="icon" class="icon"></i>
     <h3 class="title">{{ service }}</h3>
     <p class="description">{{ description }}</p>
@@ -25,6 +25,11 @@ export default {
 
 .title {
   @apply text-xl uppercase pt-2 pb-3 font-bold;
+}
+
+.article{
+  @apply my-10 w-64 shadow-md p-4 rounded-md transform scale-105 hover:scale-110 hover:shadow-xl transition-all
+         md:w-72
 }
 
 .description {
