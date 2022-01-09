@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="article">
     <img :src="project.thumb" class="img" />
     <h3 class="text-lg font-bold mt-5">{{ project.name }}</h3>
     <span class="text-sm text-green-600">{{ project.type }}</span>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  props: ["project"],
+  props: ["project"]
 };
 </script>
 
@@ -25,13 +25,14 @@ export default {
 }
 
 .img {
-  @apply object-cover md:h-44 transform hover:scale-110 transition duration-700;
+  @apply object-cover h-40 md:h-44 transform hover:scale-110 transition duration-700 rounded-sm;
 }
 
-article{
+#article{
   @apply text-left relative overflow-hidden w-10/12 mx-auto
          md:w-5/12
          lg:w-4/12
          xl:w-3/12 
 }
+
 </style>

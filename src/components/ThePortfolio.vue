@@ -9,14 +9,19 @@
         :key="index"
       />
     </div>
+
+    <MobilePortfolioSlider :projects="projects" class="sm:hidden" />
+
   </section>
 </template>
 
 <script>
 import ProjectCard from "./ProjectCard.vue";
 import SectionTitle from "./SectionTitle.vue";
+import MobilePortfolioSlider from "./MobilePorfolioSlider.vue"
+
 export default {
-  components: { ProjectCard, SectionTitle },
+  components: { ProjectCard, SectionTitle, MobilePortfolioSlider },
   data() {
     return {
       projects: [
@@ -140,7 +145,8 @@ export default {
 
 <style scoped>
 #projects {
-  @apply flex flex-col flex-wrap gap-x-20 gap-y-16 my-20
+  @apply flex-col flex-wrap gap-x-20 gap-y-16 my-20 hidden
+         sm:flex
          md:flex-row justify-center;
 }
 </style>
