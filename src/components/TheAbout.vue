@@ -1,16 +1,16 @@
 <template>
   <section id="about">
     <div id="profile">
-      <img src="../assets/profile.jpeg" id="profile-img" />
+      <img src="../assets/profile.jpeg" id="profile-img" data-aos="fade-right" />
 
-      <ul id="profile-info" class="mt-5 md:mt-0 w-full">
+      <ul id="profile-info" class="mt-5 md:mt-0 w-full" data-aos="fade-right">
         <li><strong>Nome: </strong>Samuel Pacheco</li>
         <li><strong>Atuação: </strong>Desenvolvedor FullStack</li>
         <li><strong>Email: </strong>fsamuelpacheco@gmail.com</li>
         <li><strong>Telefone: </strong>(47) 99769-4884</li>
       </ul>
 
-      <article id="skills">
+      <article id="skills" data-aos="fade-in">
         <h2 class="font-bold text-lg my-2 lg:m-0">Habilidades</h2>
         <div class="flex flex-wrap gap-2 w-full">
           <img
@@ -43,7 +43,7 @@
         </div>
       </article>
 
-      <div id="profile-description">
+      <div id="profile-description" data-aos="fade-in">
         <SubTitle :subtitle="'Sobre Mim'" />
         <p class="mt-8 text-gray-700 text-justify xl:text-xl">
           Um amante assíduo de música e de filmes de terror, sempre estudando e

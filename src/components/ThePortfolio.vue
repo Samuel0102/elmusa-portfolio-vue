@@ -1,5 +1,5 @@
 <template>
-  <section id="portfolio" class="px-5 md:w-12/12 lg:px-10 mx-auto text-center">
+  <section id="portfolio" class="px-5 md:w-12/12 lg:px-10 mx-auto text-center" data-aos="fade-in">
     <SectionTitle :title="'Portfólio'" :resume="'Projetos e Trabalhos'" />
 
     <div id="projects">

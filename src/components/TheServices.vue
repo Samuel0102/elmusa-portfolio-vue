@@ -2,10 +2,12 @@
   <section
     id="services"
     class="px-5 md:w-10/12 lg:w-9/12 mx-auto text-center md:my-32"
+    data-aos="fade-down"
   >
     <SectionTitle
       :title="'Serviços'"
       :resume="'Serviços e Atuações principais'"
+      
     />
 
     <div id="services-list">

@@ -74,7 +74,6 @@ export default {
 }
 
 .slide-fade-enter-from {
-  transform: translateX(20px);
   opacity: 0;
 }
 
