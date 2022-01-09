@@ -9,40 +9,7 @@
         <li><strong>Email: </strong>fsamuelpacheco@gmail.com</li>
         <li><strong>Telefone: </strong>(47) 99769-4884</li>
       </ul>
-
-      <article id="skills" data-aos="fade-in">
-        <h2 class="font-bold text-lg my-2 lg:m-0">Habilidades</h2>
-        <div class="flex flex-wrap gap-2 w-full">
-          <img
-            src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-          />
-          <img
-            src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
-          />
-          <img
-            src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"
-          />
-        </div>
-      </article>
-
+      
       <div id="profile-description" data-aos="fade-in">
         <SubTitle :subtitle="'Sobre Mim'" />
         <p class="mt-8 text-gray-700 text-justify xl:text-xl">

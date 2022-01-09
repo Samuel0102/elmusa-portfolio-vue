@@ -2,6 +2,7 @@
   <main>
     <TheHome />
     <TheAbout />
+    <TheSkills />
     <TheServices />
     <ThePortfolio />
     <div class="bg-green-600 pt-16 pb-5 shadow-2xl">
@@ -16,6 +17,7 @@ import TheContact from "@/components/TheContact.vue";
 import TheHome from "@/components/TheHome.vue";
 import ThePortfolio from "@/components/ThePortfolio.vue";
 import TheServices from "@/components/TheServices.vue";
+import TheSkills from '../components/TheSkills.vue';
 
 export default {
   name: "App",
@@ -25,6 +27,7 @@ export default {
     TheServices,
     ThePortfolio,
     TheContact,
+    TheSkills
   },
 };
 </script>

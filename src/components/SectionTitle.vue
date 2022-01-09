@@ -1,6 +1,6 @@
 <template>
-  <h2 id="title" class="text-5xl font-bold mt-12">{{ title }}</h2>
-  <p id="resume" class="mt-2 mb-10 text-lg text-gray-700 relative">
+  <h2 id="title" class="text-5xl font-bold mt-12 text-center">{{ title }}</h2>
+  <p id="resume" class="mt-2 mb-10 text-lg text-gray-700 relative text-center">
     {{ resume }}
   </p>
 </template>

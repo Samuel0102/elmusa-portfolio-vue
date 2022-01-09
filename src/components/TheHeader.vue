@@ -6,6 +6,7 @@
       <ul class="hidden sm:block ul space-x-6">
         <li><a href="#" v-scroll-to="'#home'">Home</a></li>
         <li><a href="#about" v-scroll-to="'#about'">Sobre</a></li>
+        <li><a href="#skills" v-scroll-to="'#skills'">Skills</a></li>
         <li><a href="#services" v-scroll-to="'#services'">Serviços</a></li>
         <li><a href="#portfolio" v-scroll-to="'#portfolio'">Portfólio</a></li>
         <li><a href="#contact" v-scroll-to="'#contact'">Contato</a></li>

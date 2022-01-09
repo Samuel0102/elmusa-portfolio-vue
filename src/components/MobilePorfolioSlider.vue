@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .slider-button{
     @apply    absolute text-2xl transform hover:scale-125 transition-all
             bg-white py-1 px-2 rounded-full bg-opacity-60
