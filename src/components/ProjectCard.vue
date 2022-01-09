@@ -32,7 +32,7 @@ export default {
   @apply text-left relative overflow-hidden w-10/12 mx-auto
          md:w-5/12
          lg:w-4/12
-         xl:w-3/12 
+         xl:w-3/12 transform xl:scale-110
 }
 
 </style>
