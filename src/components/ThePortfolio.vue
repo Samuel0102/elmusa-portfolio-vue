@@ -31,7 +31,7 @@ export default {
           data: "2021",
           thumb: require("@/assets/rest.png"),
           gitRepo: "https://github.com/Samuel0102/rest-countries-tailwind",
-          url: "https://vibrant-cray-150260.netlify.app/country.html#",
+          url: "https://countriesrestapp.netlify.app/",
           skills: "Tailwind, RestCountries API & JavaScript",
           description: `
             Projeto implementado com base em design proposto
@@ -81,7 +81,7 @@ export default {
           thumb: require("@/assets/room.png"),
           gitRepo:
             "https://github.com/Samuel0102/room-homepage-front-end-mentor",
-          url: "https://vigorous-sinoussi-94d8d8.netlify.app/",
+          url: "https://roomhomepageapp.netlify.app/",
           skills: "Sass & JavaScript",
           description: `
             Desafio de Front End, implementado com o uso
@@ -97,7 +97,7 @@ export default {
           data: "2021",
           thumb: require("@/assets/easy.png"),
           gitRepo: "https://github.com/Samuel0102/easy-bank-front-end-mentor",
-          url: "https://jovial-chandrasekhar-e467fd.netlify.app/",
+          url: "https://landing-page-easy-bank.netlify.app/",
           skills: "Tailwind & JavaScript",
           description: `
             Projeto Front-End implementado com base em desafio proposto pela
