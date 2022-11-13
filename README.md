@@ -1,40 +1,49 @@
-# Elmusa - Portfólio
-Portfólio e Apresentação de Desenvolvedor em VueJs e Tailwind
-:link: https://elegant-visvesvaraya-e1c7df.netlify.app/#/
+# Elmusa - Portfolio
+Portfolio for the Elmusa Developer - me :)
 
-# Sobre o projeto
+## About the project
 
-## Introdução
-Visando a necessidade de uma apresentação dos meus projetos desenvolvidos e de mim enquanto desenvolvedor pensei num Portfólio. Foi construído com base em um design disponibilizado GRATUITAMENTE pela plataforma BootstrapMade e utilizando o framework VueJs, a fim de ganhar habilidade nele e conhecimento no mundo de tecnologias reativas.
+### Final Visual
 
-## Especificações
-*Autores*: Samuel Pacheco Ferreira     
-*Descrição*: Portfólio de apresentação pessoal e de Projetos em VueJs.  
-*Andamento*: Finalizado.     
-*Terá atualizações*: Sim.        
+#### Desktop
 
-## Tecnologias
-*Tecnologias utilizadas*: VueJs e Tailwind      
-*IDE*: Visual Studio Code.      
-*Estruturação*: Estruturado em VueJs e Vue Router
-
-## Funcionalidades
-Não possuí funcionalidades, visto que não é interligado a nenhuma API ou Sistema Exterior.
-## Requisitos para manipular código
-* Instalação das dependências, com `npm install`, após clonagem do repositório com um `git clone`. 
-
-## Execução do sistema
-* Para desenvolvimento basta utilizar o comando `npm run serve` para execução do servidor de desenvolvimento.
-## Documentações do sistema e outros arquivos
-Nenhum arquivo/documentação extra
-## Origem do projeto
-Originário do design do BootstrapMade e da necessidade de um portfólio.
-:link: Design: https://bootstrapmade.com/demo/DevFolio/
- 
-## Principais dificuldades
-* Primeiro uso de VueJs
+![image](https://user-images.githubusercontent.com/61472839/201500514-09f90c44-1276-4ba4-8e7f-d6258ae48dd9.png)
 
 
+#### Mobile
+
+![image](https://user-images.githubusercontent.com/61472839/201500522-63c89439-a135-4d85-b54b-862ba8483e4c.png)
 
 
+### Introduction
+This project was made to show all of my works as a Developer, the main technology used was VueJS, to get knowledge and experience in the framework. The portfolio has the objective to show about me, my skills, my work and all my main projects
 
+### Especifications
+*Author*: Samuel Pacheco Ferreira      
+*Description*: Portfolio     
+*Stage*: Finished         
+*Will be updated?*: No          
+
+### Technologies
+*Technologies*: VueJS and TailwindCSS           
+*IDE*: Visual Studio Code          
+*Main Structure*: VueJS       
+
+### Functionalities
+* Only a visual portfolio
+
+
+### Requirements to coding
+* Install the dependencies of project(after cloning the repository) using `npm install`
+
+### System Execution
+1. After the install of dependencies use the command `npm run serve` to start the server
+
+### Documentation or other files
+:link: 
+
+### Project Origin
+* Design made by BootstrapMade(with adaptations). The design has a free-using license
+
+### Main Challenges of the project
+* First using of VueJS
